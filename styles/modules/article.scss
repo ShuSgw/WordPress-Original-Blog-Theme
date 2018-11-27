@@ -1,0 +1,83 @@
+.article {
+    margin-top: 4.6em;
+    width: 100%;
+    background: white;
+    box-shadow: 1px 1px 7px;
+    padding: 1em;
+    word-wrap: break-word;
+
+
+    @media #{$pc} {
+        width: 95%;
+    }
+
+    ul,
+    ol {
+        padding: 2.6em .8em;
+        font-size: 1.1em;
+
+        li {
+            list-style: disc;
+        }
+    }
+
+    .articleInfo {
+        font-size: 1em;
+        color: grey;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        font-size: 1.1em;
+        line-height: 1.6em;
+    }
+
+    .cat-data {
+        background: skyblue;
+        color: white;
+        border-radius: 130px;
+        padding: .2em 1.8em;
+        font-size: .8em;
+
+        &:hover {
+            background: darkgrey;
+        }
+    }
+
+    .articleTag {
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                padding: .5em 0em;
+                border-radius: 50px;
+
+                a {
+                    padding: .5em 1em;
+                    background: skyblue;
+                    border-radius: 50px;
+
+                    :hover {
+                        background: rgb(92, 144, 164);
+                    }
+                }
+            }
+        }
+    }
+
+    .gallery-item {
+        padding: 1em 0;
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+        padding: 1.5em 0;
+    }
+
+}

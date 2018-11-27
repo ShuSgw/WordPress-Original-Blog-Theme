@@ -1,0 +1,110 @@
+.contents {
+    min-height: 70%;
+    background: #EAEDF2;
+    padding-bottom: 3.7em;
+    .cardBoxes {
+        padding-top: 3.7em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media #{$tablet} {
+            flex-direction: row;
+            align-items: right;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @media #{$pc} {
+            width: 95%;
+            flex-direction: row;
+            align-items: right;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .cardBox {
+            box-shadow: 1px 1px 7px;
+            background: white;
+            width: 370px;
+            padding: 1em 0;
+            margin: 1em 0;
+            position: relative;
+            transition: box-shadow .5s linear;
+            transition: transform .5s linear;
+            &:hover {
+                box-shadow: 10px 10px 7px silver;
+                transform: translateY(-5px);
+            }
+            .eyeCatch {
+                width: 342px;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .cat-data {
+                background: grey;
+                color: white;
+                position: absolute;
+                border-radius: 130px;
+                top: 2em;
+                left: 2em;
+                padding: .2em 1.8em;
+                font-size: .8em;
+                &:hover {
+                    background: darkgrey;
+                }
+            }
+            time {
+                color: grey;
+                padding: .7em 0;
+                font-size: .8em;
+                display: block;
+            }
+        }
+    }
+    .pagination {
+        ul {
+            li {
+                display: inline-block;
+                margin-top: 1em;
+                .page-numbers {
+                    display: block;
+                    padding: .7em 1em;
+                    border-radius: 100%;
+                    &:hover {
+                        background: rgb(155, 208, 229);
+                    }
+                }
+                .current {
+                    background: skyblue;
+                    &:hover {
+                        background: skyblue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .flex-container {
+//     display: flex;
+//     flex-direction: row;
+//     /* デフォルト値 */
+//     align-items: stretch;
+//     /* デフォルト値 */
+//     justify-content: flex-start;
+//     /* デフォルト値 */
+//     flex-wrap: nowrap;
+//     /* デフォルト値 */
+//     align-content: stretch;
+//     /* デフォルト値 */
+// }
+// .flex-item {
+//     flex-grow: 0;
+//     /* デフォルト値 */
+//     flex-shrink: 1;
+//     /* デフォルト値 */
+//     flex-basis: auto;
+//     /* デフォルト値 */
+// }

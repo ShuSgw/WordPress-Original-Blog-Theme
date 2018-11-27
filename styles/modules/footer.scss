@@ -1,0 +1,26 @@
+footer {
+    background: #4A4A4A;
+    padding: 1.2em 0;
+    color: white;
+    p {
+        text-align: center;
+        font-size: .8em;
+        opacity: .5;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+        li {
+            color: white;
+            a {
+                display: block;
+                padding: .8em .7em;
+                color: white;
+                &:hover {
+                    background: grey;
+                }
+            }
+        }
+    }
+}

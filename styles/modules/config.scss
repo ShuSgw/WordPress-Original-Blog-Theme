@@ -1,0 +1,12 @@
+$smallPhone: "only screen and (max-width:640px)";
+$tablet: "only screen and (min-width:641px) and (max-width:1024px)";
+$pc: "only screen and (min-width:1024px)";
+// @media #{$phone} {
+//     //less than 640px
+// }
+// @media #{$tablet} {
+//     //more than 641px till 959px
+// }
+// @media #{$pc} {
+//     more than 960px以上
+// }

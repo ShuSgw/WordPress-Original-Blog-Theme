@@ -1,0 +1,53 @@
+#navBtn {
+    color: white;
+    background: #4A4A4A;
+    width: 100%;
+    text-align: right;
+    padding: .5em 0;
+    position: relative;
+    @media #{$pc} {
+        display: none;
+    }
+    .fa-bars {
+        margin-right: .5em;
+        font-size: 3em;
+        cursor: pointer;
+    }
+}
+
+nav {
+    display: none;
+    background: rgb(110, 110, 110);
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    @media #{$pc} {
+        display: block;
+    }
+    .container {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        ul {
+            @media #{$pc} {
+                text-align: right;
+                margin: 0 auto;
+                max-width: 1140px;
+                width: 95%;
+            }
+            li {
+                @media #{$pc} {
+                    display: inline-block;
+                }
+                a {
+                    display: block;
+                    padding: 10px 10px;
+                    color: white;
+                    transition: all .2s linear;
+                    &:hover {
+                        background: grey;
+                    }
+                }
+            }
+        }
+    }
+}

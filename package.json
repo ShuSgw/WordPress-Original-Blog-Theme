@@ -1,0 +1,19 @@
+{
+  "name": "owntheme",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sample": "echo 'sample'",
+    "sass": "node-sass --include-path scss styles/main.scss style.css -w",
+    "syc": "browser-sync start --server --files *",
+    "aaa": "echo 'sample'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "node-sass": "^4.10.0"
+  }
+}
